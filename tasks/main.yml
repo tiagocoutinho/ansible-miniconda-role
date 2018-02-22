@@ -44,5 +44,5 @@
     dest="/tmp/{{ miniconda_env.name }}-environment.yml"
   when: miniconda_env != ''
 
-- include: environment.yml
+- import_tasks: environment.yml
   when: miniconda_env != ''
